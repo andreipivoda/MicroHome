@@ -12,15 +12,30 @@ export class LoginComponent implements OnInit {
 
 
     private inputPIN = "";
+    private secretPIN = "258"
+
     constructor() { }
 
     ngOnInit() {
     }
 
-    onTap(args) {
+    onTap(args):void {
         let button = args.object as Button;
         // console.log(button.text);
         this.inputPIN += button.text;
+    }
+
+    tryLogin(){
+        // let button = args.object as Button;
+
+        if(this.secretPIN === this.inputPIN){
+            alert('ok');
+        } else {
+            this.inputPIN = "";
+            alert('Wrong PIN, try again');
+        }
+
+
     }
 
     onLabelLoaded(args) {

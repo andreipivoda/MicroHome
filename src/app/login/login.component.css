@@ -1,5 +1,22 @@
 /* Add mobile styles for the component here.  */
 
+StackLayout {
+    background-color: #2196f3;
+}
+
+GridLayout {
+    height: 40%;
+    background-color: #2196f3;
+}
+
+Label {
+    background-color: #2196f3;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 30;
+}
+
 .title {
     /* margin-top:100; */
     /* text-align: center; */
@@ -21,27 +38,10 @@
     border-radius: 30;
 }
 
-GridLayout {
-    height: 40%;
-    background-color: #2196f3;
-}
-
-Label {
-    background-color: #2196f3;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    font-size: 30
-}
-
 .loginBtn {
     color: white;
     margin-top: 30;
     font-size: 26;
     background-color: #0d47a1;
     border-radius: 20;
-}
-
-StackLayout {
-    background-color: #2196f3;
 }
