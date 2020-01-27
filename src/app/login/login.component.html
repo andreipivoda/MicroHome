@@ -3,18 +3,19 @@
 </ActionBar>
 <ScrollView>
     <StackLayout orientation="vertical" height="100%">
-        <Label style="background-color: pink;" class="title" text="Enter pin code" (loaded)="onLabelLoaded($event)"></Label>
-        <Label style="background-color: lightblue;" class="title" text="{{ inputPIN }}"></Label>
+        <Label class="title" text="Enter pin code" (loaded)="onLabelLoaded($event)"></Label>
+        <Label class="title" text="{{ inputPIN }}" (loaded)="onLabelLoaded($event)"></Label>
         <GridLayout dock="bottom" rows="*,*,*" columns="*,*,*">
-            <Button (tap)="onTap($event)" col="0" row="0" text="1"></Button>
-            <Button (tap)="onTap($event)" col="1" row="0" text="2"></Button>
-            <Button (tap)="onTap($event)" col="2" row="0" text="3"></Button>
-            <Button (tap)="onTap($event)" col="0" row="1" text="4"></Button>
-            <Button (tap)="onTap($event)" col="1" row="1" text="5"></Button>
-            <Button (tap)="onTap($event)" col="2" row="1" text="6"></Button>
-            <Button (tap)="onTap($event)" col="0" row="2" text="7"></Button>
-            <Button (tap)="onTap($event)" col="1" row="2" text="8"></Button>
-            <Button (tap)="onTap($event)" col="2" row="2" text="9"></Button>
+            <Button class="gridBtn" (tap)="onTap($event)" col="0" row="0" text="1"></Button>
+            <Button class="gridBtn" (tap)="onTap($event)" col="1" row="0" text="2"></Button>
+            <Button class="gridBtn" (tap)="onTap($event)" col="2" row="0" text="3"></Button>
+            <Button class="gridBtn" (tap)="onTap($event)" col="0" row="1" text="4"></Button>
+            <Button class="gridBtn" (tap)="onTap($event)" col="1" row="1" text="5"></Button>
+            <Button class="gridBtn" (tap)="onTap($event)" col="2" row="1" text="6"></Button>
+            <Button class="gridBtn" (tap)="onTap($event)" col="0" row="2" text="7"></Button>
+            <Button class="gridBtn" (tap)="onTap($event)" col="1" row="2" text="8"></Button>
+            <Button class="gridBtn" (tap)="onTap($event)" col="2" row="2" text="9"></Button>
         </GridLayout>
+        <Button class="loginBtn" (tap)="onTap($event)" text="Enter"></Button>
     </StackLayout>
 </ScrollView>

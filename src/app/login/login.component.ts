@@ -11,7 +11,7 @@ import { isAndroid } from 'tns-core-modules/platform';
 export class LoginComponent implements OnInit {
 
 
-    private inputPIN = " ";
+    private inputPIN = "";
     constructor() { }
 
     ngOnInit() {
@@ -19,15 +19,15 @@ export class LoginComponent implements OnInit {
 
     onTap(args) {
         let button = args.object as Button;
-        console.log(button.text);
-        this.inputPIN+=button.text;
+        // console.log(button.text);
+        this.inputPIN += button.text;
     }
 
-  onLabelLoaded(args) {
+    onLabelLoaded(args) {
         const lbl = args.object as Label;
         // console.log("label loaded")
         if (isAndroid) {
-          lbl.android.setGravity(17);
+            lbl.android.setGravity(17);
         }
-      }
+    }
 }

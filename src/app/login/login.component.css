@@ -6,23 +6,42 @@
     /* padding-top: 20; */
     /* padding-bottom: 20; */
     /* background-color: red; */
-    height:30%;
+    height: 20%;
+    color: white;
     /* line-height: 100%; */
 }
 
-Button {
+.gridBtn {
     /* margin-bottom: 20; */
-    background-color: red;
-    border-radius: 10;
+    margin-top: 10;
+    font-size: 20;
+    color: white;
+    background-color: #0d47a1;
+    height: 50;
+    border-radius: 30;
 }
 
-GridLayout{
-    height:30%;
+GridLayout {
+    height: 40%;
+    background-color: #2196f3;
 }
+
 Label {
-    background-color: aqua;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  font-size: 30
+    background-color: #2196f3;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 30
+}
+
+.loginBtn {
+    color: white;
+    margin-top: 30;
+    font-size: 26;
+    background-color: #0d47a1;
+    border-radius: 20;
+}
+
+StackLayout {
+    background-color: #2196f3;
 }
