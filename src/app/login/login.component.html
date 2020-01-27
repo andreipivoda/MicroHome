@@ -1,1 +1,20 @@
-<Button text="login works!" class="btn btn-primary"></Button>
+<ActionBar title="MicroHome -> Login">
+
+</ActionBar>
+<ScrollView>
+    <StackLayout orientation="vertical">
+        <Label class="title" text="Enter pin code:"></Label>
+        <Label class="title" text="{{ inputPIN }}"></Label>
+        <GridLayout rows="*,*,*" columns="*,*,*">
+            <Button (tap)="onTap($event)" col="0" row="0" text="1"></Button>
+            <Button (tap)="onTap($event)" col="1" row="0" text="2"></Button>
+            <Button (tap)="onTap($event)" col="2" row="0" text="3"></Button>
+            <Button (tap)="onTap($event)" col="0" row="1" text="4"></Button>
+            <Button (tap)="onTap($event)" col="1" row="1" text="5"></Button>
+            <Button (tap)="onTap($event)" col="2" row="1" text="6"></Button>
+            <Button (tap)="onTap($event)" col="0" row="2" text="7"></Button>
+            <Button (tap)="onTap($event)" col="1" row="2" text="8"></Button>
+            <Button (tap)="onTap($event)" col="2" row="2" text="9"></Button>
+        </GridLayout>
+    </StackLayout>
+</ScrollView>
