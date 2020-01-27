@@ -1,0 +1,2 @@
+npm i -D @nativescript/schematics
+npm i -D @angular/cli
