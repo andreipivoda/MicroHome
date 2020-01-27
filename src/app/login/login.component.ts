@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Button } from "tns-core-modules/ui/button";
+import { Label } from 'tns-core-modules/ui/label';
+import { isAndroid } from 'tns-core-modules/platform';
 
 @Component({
     selector: 'ns-login',
@@ -9,7 +11,7 @@ import { Button } from "tns-core-modules/ui/button";
 export class LoginComponent implements OnInit {
 
 
-    private inputPIN = "";
+    private inputPIN = " ";
     constructor() { }
 
     ngOnInit() {
@@ -21,4 +23,11 @@ export class LoginComponent implements OnInit {
         this.inputPIN+=button.text;
     }
 
+  onLabelLoaded(args) {
+        const lbl = args.object as Label;
+        // console.log("label loaded")
+        if (isAndroid) {
+          lbl.android.setGravity(17);
+        }
+      }
 }

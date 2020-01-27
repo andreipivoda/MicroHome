@@ -2,10 +2,10 @@
 
 </ActionBar>
 <ScrollView>
-    <StackLayout orientation="vertical">
-        <Label class="title" text="Enter pin code:"></Label>
-        <Label class="title" text="{{ inputPIN }}"></Label>
-        <GridLayout rows="*,*,*" columns="*,*,*">
+    <StackLayout orientation="vertical" height="100%">
+        <Label style="background-color: pink;" class="title" text="Enter pin code" (loaded)="onLabelLoaded($event)"></Label>
+        <Label style="background-color: lightblue;" class="title" text="{{ inputPIN }}"></Label>
+        <GridLayout dock="bottom" rows="*,*,*" columns="*,*,*">
             <Button (tap)="onTap($event)" col="0" row="0" text="1"></Button>
             <Button (tap)="onTap($event)" col="1" row="0" text="2"></Button>
             <Button (tap)="onTap($event)" col="2" row="0" text="3"></Button>
