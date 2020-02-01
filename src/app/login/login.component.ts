@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Button } from "tns-core-modules/ui/button";
 import { Label } from 'tns-core-modules/ui/label';
 import { isAndroid } from 'tns-core-modules/platform';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'ns-login',
@@ -13,8 +14,9 @@ export class LoginComponent implements OnInit {
 
     private inputPIN = "";
     private secretPIN = "258"
+    
 
-    constructor() { }
+    constructor(private router:Router) { }
 
     ngOnInit() {
     }
@@ -29,7 +31,7 @@ export class LoginComponent implements OnInit {
         // let button = args.object as Button;
 
         if(this.secretPIN === this.inputPIN){
-            alert('ok');
+            this.router.navigate(['dashboard']);
         } else {
             this.inputPIN = "";
             alert('Wrong PIN, try again');
