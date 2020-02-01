@@ -6,13 +6,19 @@ import { AppComponent } from "./app.component";
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+
+// ***********
+import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+
+
 @NgModule({
     bootstrap: [
         AppComponent
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,
+        NativeScriptHttpClientModule
     ],
     declarations: [
         AppComponent,
